@@ -1,7 +1,7 @@
 import React from "react";
-import WavesIcon from "@mui/icons-material/Waves"; // water/lake
-import TravelExploreIcon from "@mui/icons-material/TravelExplore"; // browse/search
-import SetMealIcon from "@mui/icons-material/SetMeal"; // fish
+import WavesIcon from "@mui/icons-material/Waves"; // Overview icon
+import TravelExploreIcon from "@mui/icons-material/TravelExplore"; // Browse Farms icon
+import SetMealIcon from "@mui/icons-material/SetMeal"; // Farms icon
 
 const Sidebar = ({ activePage, setActivePage, sidebarOpen, setSidebarOpen }) => {
   return (
@@ -11,8 +11,9 @@ const Sidebar = ({ activePage, setActivePage, sidebarOpen, setSidebarOpen }) => 
         <button className="close-btn" onClick={() => setSidebarOpen(false)}>
           ✖
         </button>
-        <h2>Investor Dashboard</h2>
+        <h2>AquaInvestor</h2>
       </div>
+
       <ul>
         <li
           className={activePage === "Overview" ? "active" : ""}
@@ -23,6 +24,7 @@ const Sidebar = ({ activePage, setActivePage, sidebarOpen, setSidebarOpen }) => 
             <span>Overview</span>
           </div>
         </li>
+
         <li
           className={activePage === "Browse Farms" ? "active" : ""}
           onClick={() => setActivePage("Browse Farms")}
@@ -32,6 +34,7 @@ const Sidebar = ({ activePage, setActivePage, sidebarOpen, setSidebarOpen }) => 
             <span>Browse Farms</span>
           </div>
         </li>
+
         <li
           className={activePage === "Farms" ? "active" : ""}
           onClick={() => setActivePage("Farms")}
