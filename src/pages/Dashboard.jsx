@@ -242,7 +242,7 @@ const Dashboard = ({ activePage, sidebarOpen }) => {
       {activePage === "Farms" && (
         <div>
           <h3>Farms</h3>
-          <FilterBar
+          <Filterbar
             location={location}
             setLocation={setLocation}
             species={species}
