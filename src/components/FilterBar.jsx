@@ -1,6 +1,7 @@
 import React from "react";
 
-const Filterbar = ({ location, setLocation, species, setSpecies, handleClear }) => {
+// Renamed to FilterBar for consistent casing and convention
+const FilterBar = ({ location, setLocation, species, setSpecies, handleClear }) => {
   return (
     <div className="filter-bar">
       <select value={location} onChange={(e) => setLocation(e.target.value)}>
@@ -24,4 +25,4 @@ const Filterbar = ({ location, setLocation, species, setSpecies, handleClear }) 
   );
 };
 
-export default Filterbar;
+export default FilterBar;
