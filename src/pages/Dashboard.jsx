@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DashboardCard from "../components/DashboardCard";
 import Header from "../components/Header";
-import FilterBar from "../components/Filterbar";
+import FilterBar from "../components/filterbar";
 import SetMealIcon from "@mui/icons-material/SetMeal"; // fish
 import SpeedIcon from "@mui/icons-material/Speed"; // productivity
 import OpacityIcon from "@mui/icons-material/Opacity"; // water/output
@@ -242,7 +242,7 @@ const Dashboard = ({ activePage, sidebarOpen }) => {
       {activePage === "Farms" && (
         <div>
           <h3>Farms</h3>
-          <FilterBar
+          <Filterbar
             location={location}
             setLocation={setLocation}
             species={species}

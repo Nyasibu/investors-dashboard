@@ -1,5 +1,6 @@
 import React from "react";
 
+// Renamed to FilterBar for consistent casing and convention
 const FilterBar = ({ location, setLocation, species, setSpecies, handleClear }) => {
   return (
     <div className="filter-bar">
