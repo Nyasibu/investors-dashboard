@@ -11,7 +11,7 @@ const Sidebar = ({ activePage, setActivePage, sidebarOpen, setSidebarOpen }) => 
         <button className="close-btn" onClick={() => setSidebarOpen(false)}>
           ✖
         </button>
-        <h2>AquaInvestor</h2>
+        <h2>Investor Dashboard</h2>
       </div>
 
       <ul>
