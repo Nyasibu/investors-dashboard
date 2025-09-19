@@ -151,19 +151,16 @@ const Dashboard = ({ activePage, sidebarOpen }) => {
     title="Total Farms"
     value={totalFarms}
     description="Active Farms"
-    icon={<SetMealIcon />}
   />
   <DashboardCard
     title="Avg Productivity"
     value={`${avgProductivity}%`}
     description="Efficiency Rating"
-    icon={<SpeedIcon />}
   />
   <DashboardCard
     title="Total Output"
     value={`${(totalOutput / 1000).toFixed(1)}K`}
     description="tons/year"
-    icon={<OpacityIcon />}
   />
 </div>
 
