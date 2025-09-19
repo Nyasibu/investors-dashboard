@@ -171,8 +171,44 @@ body {
   border-radius: 16px;
   padding: 30px;
   box-shadow: 0px 6px 12px rgba(0,0,0,0.1);
-  text-align: center;
+  text-align: left;
   min-height: 150px;
+}
+
+/* Align icon and text inside dashboard cards */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #0d3b66;
+  flex-shrink: 0;
+}
+
+/* Ensure MUI SVG icons render with correct size/color when wrapped */
+.card-header .MuiSvgIcon-root,
+.card-header svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  color: #0d3b66;
+  flex-shrink: 0;
+}
+
+.card h4 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Keep icon and title on one horizontal line */
+.card-header h4 {
+  white-space: nowrap;
 }
 
 .card h4 {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DashboardCard from "../components/DashboardCard";
 import Header from "../components/Header";
-import FilterBar from "../components/filterbar";
+import Filterbar from "../components/FilterBar";
 import SetMealIcon from "@mui/icons-material/SetMeal"; // fish
 import SpeedIcon from "@mui/icons-material/Speed"; // productivity
 import OpacityIcon from "@mui/icons-material/Opacity"; // water/output
@@ -151,19 +151,19 @@ const Dashboard = ({ activePage, sidebarOpen }) => {
     title="Total Farms"
     value={totalFarms}
     description="Active Farms"
-    icon={<SetMealIcon style={{ fontSize: 28, color: "#0d3b66",alignItems: "center" }} />}
+    icon={<SetMealIcon />}
   />
   <DashboardCard
     title="Avg Productivity"
     value={`${avgProductivity}%`}
     description="Efficiency Rating"
-    icon={<SpeedIcon style={{ fontSize: 28, color: "#0d3b66", alignItems: "center" }} />}
+    icon={<SpeedIcon />}
   />
   <DashboardCard
     title="Total Output"
     value={`${(totalOutput / 1000).toFixed(1)}K`}
     description="tons/year"
-    icon={<OpacityIcon style={{ fontSize: 28, color: "#0d3b66", alignItems: "center" }} />}
+    icon={<OpacityIcon />}
   />
 </div>
 

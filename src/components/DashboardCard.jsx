@@ -3,8 +3,8 @@ import React from "react";
 const DashboardCard = ({ title, value, description, icon }) => {
   return (
     <div className="card">
-      <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-        {icon}
+      <div className="card-header">
+        <span className="card-icon">{icon}</span>
         <h4>{title}</h4>
       </div>
       <h2>{value}</h2>
